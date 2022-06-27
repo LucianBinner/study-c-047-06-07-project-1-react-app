@@ -1,10 +1,14 @@
+import { Heading } from '../../components/Heading';
 import { Wrapper } from './styles';
 
 const App = () => {
   return (
-    <Wrapper background="blue">
-      <h1>Hello World!</h1>
-    </Wrapper>
+    <>
+      <Heading>Header</Heading>
+      <Wrapper background="blue">
+        <h1>Hello World!</h1>
+      </Wrapper>
+    </>
   );
 };
 
