@@ -1,8 +1,10 @@
+import { Wrapper } from './styles';
+
 const App = () => {
   return (
-    <div>
+    <Wrapper background="blue">
       <h1>Hello World!</h1>
-    </div>
+    </Wrapper>
   );
 };
 
