@@ -10,6 +10,6 @@ test('Renders learn react link', () => {
   expect(headingContainer).toHaveStyle({
     background: 'blue',
   });
-  expect(headingContainer).toMatchSnapshot(); // Faz snapchot do elemento testado
+  // expect(headingContainer).toMatchSnapshot(); // Faz snapchot do elemento testado
   expect(headingContainer).toHaveStyleRule('background', 'blue');
 });
