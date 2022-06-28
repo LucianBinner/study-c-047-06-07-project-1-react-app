@@ -4,12 +4,21 @@ export default {
   title: 'Heading',
   component: Heading,
   args: {
-    children: 'O texto esta claro!',
-    fontLight: false,
+    children: 'Thema esta claro!',
+    colorDark: true,
+    as: 'h1',
+    size: 'big',
+    uppercase: false,
   },
   argTypes: {
     children: { type: 'string' },
-    fontLight: { type: 'boolean' },
+    colorDark: { type: 'boolean' },
+    as: { control: 'select', options: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'] },
+    size: {
+      control: 'select',
+      options: ['small', 'medium', 'big', 'huge'],
+    },
+    uppercase: { type: 'boolean' },
   },
   parameters: {
     backgrounds: {
@@ -28,6 +37,6 @@ Light.parameters = {
 };
 
 Dark.args = {
-  children: 'O texto está escuro!',
-  fontLight: true,
+  children: 'Thema está escuro!',
+  colorDark: false,
 };
