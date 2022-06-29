@@ -7,7 +7,6 @@ export const Heading = ({
   size = 'big',
   uppercase = false,
 }) => {
-  console.log(size);
   return (
     <Title colorDark={colorDark} as={as} size={size} uppercase={uppercase}>
       {children}
