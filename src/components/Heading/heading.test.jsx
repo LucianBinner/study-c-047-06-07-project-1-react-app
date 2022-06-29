@@ -79,4 +79,9 @@ describe('<Heading />', () => {
     const h6 = container.querySelector('h6'); // Pegando um elemento html apartir do seu container
     expect(h6.tagName.toLowerCase()).toBe('h6');
   });
+
+  it('Should match snapshot', () => {
+    const { container } = renderTheme(<Heading>Any Text</Heading>);
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });
