@@ -11,27 +11,3 @@ exports[`<TextComponent /> Should match snapshot 1`] = `
   Content
 </p>
 `;
-
-exports[`<TextComponent /> Should match snapshot 2`] = `
-.c0 {
-  font-size: 2.4rem;
-}
-
-<p
-  class="c0"
->
-  Content
-</p>
-`;
-
-exports[`<TextComponent /> Should render 1`] = `
-.c0 {
-  font-size: 2.4rem;
-}
-
-<p
-  class="c0"
->
-  Content
-</p>
-`;
