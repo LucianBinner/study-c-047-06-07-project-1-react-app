@@ -1,4 +1,4 @@
-import { SectionContainer } from '../SelectionContainer';
+import { SectionContainer } from '../SectionContainer';
 import { Container } from './styles';
 
 export const SectionBackground = ({ children, background }) => {

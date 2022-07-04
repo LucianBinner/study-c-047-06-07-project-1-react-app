@@ -1,5 +1,5 @@
 import { SectionBackground } from '.';
-import { SectionContainer } from '../SelectionContainer';
+import { SectionContainer } from '../SectionContainer';
 
 export default {
   title: 'SectionBackground',

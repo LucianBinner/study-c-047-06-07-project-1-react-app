@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { theme } from '../../styles/theme';
 
-export const Container = styled.div`
+export const Container = styled.nav`
   display: flex;
   flex-flow: row wrap;
 
