@@ -5,7 +5,9 @@ import { screen } from '@testing-library/react';
 describe('<SectionBackground />', () => {
   it('Should render with background dark', () => {
     const { container } = renderTheme(
-      <SectionBackground background={true}>Content</SectionBackground>,
+      <SectionBackground background={true}>
+        <h1>Children</h1>
+      </SectionBackground>,
     );
     const component = screen.getByRole('heading');
     expect(component).toBeInTheDocument();
@@ -14,7 +16,9 @@ describe('<SectionBackground />', () => {
 
   it('Should render with background light', () => {
     const { container } = renderTheme(
-      <SectionBackground>Content</SectionBackground>,
+      <SectionBackground>
+        <h1>Children</h1>
+      </SectionBackground>,
     );
     const component = screen.getByRole('heading');
     expect(component).toBeInTheDocument();

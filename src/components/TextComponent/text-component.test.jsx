@@ -15,6 +15,7 @@ describe('<TextComponent />', () => {
     expect(container.firstChild).toMatchInlineSnapshot(`
       .c0 {
         font-size: 2.4rem;
+        font-weight: 400;
       }
 
       <p

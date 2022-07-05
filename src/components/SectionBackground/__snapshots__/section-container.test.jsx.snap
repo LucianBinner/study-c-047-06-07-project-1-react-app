@@ -31,7 +31,7 @@ exports[`<SectionBackground /> Should render with background dark 1`] = `
       class="c1"
     >
       <h1>
-        Content
+        Children
       </h1>
     </div>
   </div>
@@ -67,7 +67,7 @@ exports[`<SectionBackground /> Should render with background light 1`] = `
       class="c1"
     >
       <h1>
-        Content
+        Children
       </h1>
     </div>
   </div>

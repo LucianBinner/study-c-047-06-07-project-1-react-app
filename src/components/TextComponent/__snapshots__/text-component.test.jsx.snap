@@ -3,6 +3,7 @@
 exports[`<TextComponent /> Should match snapshot 1`] = `
 .c0 {
   font-size: 2.4rem;
+  font-weight: 400;
 }
 
 <p

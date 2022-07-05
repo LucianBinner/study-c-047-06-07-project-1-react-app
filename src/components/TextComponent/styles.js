@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { theme } from '../../styles/theme';
 
 export const Container = styled.p`
-  font-size: ${theme.font.sizes.medium};
+  font-size: ${({ theme }) => theme.font.sizes.medium};
+  font-weight: 400;
 `;
