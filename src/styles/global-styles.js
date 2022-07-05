@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { theme } from './theme';
 
 export const GlobalStyles = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -15,10 +16,24 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     font-size: 1.6rem;
-    font-family: ${({ theme }) => theme.font.family.default};
+    font-family: ${theme.font.family.default};
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: ${({ theme }) => theme.font.family.secondary};
+    font-family: ${theme.font.family.secondary};
+    margin: ${theme.spacings.large} 0;
+  }
+
+  p {
+    margin: ${theme.spacings.medium} 0;
+  }
+
+  ul, ol {
+    margin: ${theme.spacings.medium};
+    padding: ${theme.spacings.medium};
+  }
+
+  a {
+    color: ${theme.colors.secondaryColor}
   }
 `;

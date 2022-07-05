@@ -1,5 +1,5 @@
 import { Container } from './styles';
 
 export const TextComponent = ({ children }) => {
-  return <Container>{children}</Container>;
+  return <Container dangerouslySetInnerHTML={{ __html: children }} />;
 };
