@@ -79,11 +79,11 @@ exports[`<GridImage /> Should render 1`] = `
         >
           My grid
         </h2>
-        <p
+        <div
           class="c4 c5"
         >
           Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde
-        </p>
+        </div>
         <div
           class="c6"
         >
@@ -227,11 +227,11 @@ exports[`<GridImage /> Should render GridText with background undefined 1`] = `
         >
           My grid
         </h2>
-        <p
+        <div
           class="c4 c5"
         >
           Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde
-        </p>
+        </div>
         <div
           class="c6"
         >

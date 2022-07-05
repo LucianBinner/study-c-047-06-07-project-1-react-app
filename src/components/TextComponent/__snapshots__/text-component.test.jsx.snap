@@ -6,9 +6,9 @@ exports[`<TextComponent /> Should match snapshot 1`] = `
   font-weight: 400;
 }
 
-<p
+<div
   class="c0"
 >
   Content
-</p>
+</div>
 `;

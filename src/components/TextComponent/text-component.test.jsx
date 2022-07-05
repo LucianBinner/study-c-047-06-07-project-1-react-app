@@ -18,11 +18,11 @@ describe('<TextComponent />', () => {
         font-weight: 400;
       }
 
-      <p
+      <div
         class="c0"
       >
         Content
-      </p>
+      </div>
     `); // O snapchot acima é gerado automaticamente
   });
 });
