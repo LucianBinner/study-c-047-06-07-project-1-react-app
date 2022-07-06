@@ -1,8 +1,6 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
-export const Wrapper = styled.div`
-  ${({ theme, background }) => css`
-    background: ${background};
-    color: ${theme.colors.mainBg};
-  `}
+export const Container = styled.div`
+    width: 100%;
+    display: flex;
 `;
