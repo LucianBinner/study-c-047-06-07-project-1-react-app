@@ -72,6 +72,12 @@ exports[`<GridText /> Should render 1`] = `
   }
 }
 
+@media (max-width:768px) {
+  .c7 {
+    grid-template-columns: 1fr;
+  }
+}
+
 <div>
   <div
     class="c0"
@@ -213,6 +219,12 @@ exports[`<GridText /> Should render GridText with background undefined 1`] = `
 @media (max-width:768px) {
   .c4 {
     font-size: 4.0rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c7 {
+    grid-template-columns: 1fr;
   }
 }
 
