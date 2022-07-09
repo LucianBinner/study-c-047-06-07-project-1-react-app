@@ -4,6 +4,7 @@ import { Base } from '../Base';
 import mock from '../Base/mock';
 import { Container } from './styles';
 import { PageNotFound } from '../PageNotFound';
+import { Loading } from '../Loading';
 
 const Home = () => {
   const [data, setData] = useState([]);
@@ -42,7 +43,7 @@ const Home = () => {
   }
 
   if (data && !data.slug) {
-    return <h1>Carregando...</h1>;
+    return <Loading />;
   }
 
   return (
