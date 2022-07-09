@@ -15,7 +15,7 @@ describe('map-sections', () => {
   });
 
   it('should render sections with correct data', () => {
-    const data = mapSections(pagesFakeData[0].sections);
+    const data = mapSections(pagesFakeData?.data[0]?.attributes?.sections);
     expect(data[0].component).toBe('section.section-two-columns');
   });
 
@@ -47,7 +47,7 @@ describe('map-sections', () => {
     expect(withNoTextOrImageGrid.length).toBe(2);
   });
 
-  it('should map section two columns', () => {
+  it('should map section two columns if data is empty', () => {
     const data = mapSectionTwoColumns();
     expect(data.background).toBe(false);
     expect(data.component).toBe('');
@@ -57,7 +57,7 @@ describe('map-sections', () => {
     expect(data.title).toBe('');
   });
 
-  it('should map section two columns', () => {
+  it('should map section two columns with data', () => {
     const data = mapSectionTwoColumns({
       __component: 'section.section-two-columns',
       title: 'title',
@@ -126,7 +126,7 @@ describe('map-sections', () => {
       },
     });
     expect(data.background).toBe(true);
-    expect(data.component).toBe('section.section-grid');
+    expect(data.component).toBe('section.section-grid-text');
     expect(data.sectionId).toBe('grid-one');
     expect(data.title).toBe('My Grid');
     expect(data.description).toBe('abc');
@@ -134,10 +134,10 @@ describe('map-sections', () => {
     expect(data.grid[0].description).toBe('Coisa');
   });
 
-  it('should map grid text', () => {
+  it('should map grid text without data', () => {
     const data = mapTextGrid(undefined);
     expect(data.background).toBe(false);
-    expect(data.component).toBe('');
+    expect(data.component).toBe('section.section-grid-text');
     expect(data.sectionId).toBe('');
     expect(data.title).toBe('');
     expect(data.description).toBe('');
